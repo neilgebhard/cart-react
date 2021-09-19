@@ -36,7 +36,7 @@ const TopBar = (props) => {
     <AppBar position="absolute" open={props.open} elevation={1} color="inherit">
       <Toolbar
         sx={{
-          pr: "24px", // keep right padding when drawer closed
+          pr: "24px",
         }}
       >
         <IconButton

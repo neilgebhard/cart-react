@@ -69,7 +69,6 @@ const Cart = () => {
             </Typography>
           </ListItem>
         </List>
-
         {cart.length > 0 && (
           <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
             <Button

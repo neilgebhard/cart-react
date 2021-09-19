@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import HomePage from "./Pages/Home";
 import ElectronicsPage from "./Pages/Electronics";
@@ -13,33 +13,6 @@ function App() {
       <Switch>
         <Route path="/electronics">
           <ElectronicsPage />
-          {/* <Grid container spacing={3}>
-              <Grid item xs={12} md={8} lg={9}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    height: 240,
-                  }}
-                ></Paper>
-              </Grid>
-              <Grid item xs={12} md={4} lg={3}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    height: 240,
-                  }}
-                ></Paper>
-              </Grid>
-              <Grid item xs={12}>
-                <Paper
-                  sx={{ p: 2, display: "flex", flexDirection: "column" }}
-                ></Paper>
-              </Grid>
-            </Grid> */}
         </Route>
         <Route path="/jewelry">
           <JewelryPage />
@@ -54,7 +27,7 @@ function App() {
           <CartPage />
         </Route>
         <Route path="/">
-          <HomePage />
+          <Redirect to="/mens-clothing" />
         </Route>
       </Switch>
     </Layout>
