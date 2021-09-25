@@ -4,6 +4,8 @@
 
 This project holds the source code for a shopping cart web app built with [Create React App](https://github.com/facebook/create-react-app) and the [Fake Store API](https://fakestoreapi.com/). It uses [Redux Toolkit](https://redux-toolkit.js.org/) for its data store and [Material-UI](https://mui.com/) for styling. The project is deployed on [Netlify](https://neilscartapp.netlify.com/). 
 
+![](cart.gif)
+
 Some features I would add in the future are:
 
 - Persistence: store cart items in a database
@@ -11,13 +13,3 @@ Some features I would add in the future are:
 - Auth
 
 😊
-
-## Available Scripts
-
-### `yarn start`
-
-### `yarn test`
-
-### `yarn build`
-
-### `yarn eject`

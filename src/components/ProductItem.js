@@ -21,7 +21,6 @@ const ProductItem = (props) => {
       <Card sx={{ maxWidth: 1000 }}>
         <CardMedia
           component="img"
-          // height="345"
           image={product.image}
           alt={product.title}
         />
