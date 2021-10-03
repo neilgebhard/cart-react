@@ -12,10 +12,15 @@ const WomensClothing = () => {
       .then((json) => setWomensClothing(json));
   }, []);
 
+  let numResults = womensClothing.length;
+
   return (
     <div>
       <h1>Women's Clothing</h1>
       <Container>
+        {numResults > 0 && (
+          <p className="text-secondary">Showing {numResults} results</p>
+        )}
         <Grid container spacing={4}>
           {womensClothing.map((product) => (
             <ProductItem key={product.id} product={product} />

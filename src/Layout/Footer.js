@@ -10,7 +10,7 @@ const Footer = (props) => {
       {...props}
     >
       Made with ❤️ by Neil Gebhard. The code is on{" "}
-      <Link color="inherit" href="https://github.com/">
+      <Link color="inherit" href="https://github.com/neilgebhard/cart-react">
         Github
       </Link>
       .

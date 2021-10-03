@@ -19,11 +19,7 @@ const ProductItem = (props) => {
   return (
     <Grid item sm={12} md={6} lg={4}>
       <Card sx={{ maxWidth: 1000 }}>
-        <CardMedia
-          component="img"
-          image={product.image}
-          alt={product.title}
-        />
+        <CardMedia component="img" image={product.image} alt={product.title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {product.title}

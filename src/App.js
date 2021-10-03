@@ -1,11 +1,11 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 import Layout from "./Layout/Layout";
-import HomePage from "./Pages/Home";
 import ElectronicsPage from "./Pages/Electronics";
 import JewelryPage from "./Pages/Jewelry";
 import MensClothingPage from "./Pages/MensClothing";
 import WomensClothingPage from "./Pages/WomensClothing";
 import CartPage from "./Pages/Cart";
+import "./App.css";
 
 function App() {
   return (

@@ -9,15 +9,17 @@ const cartSlice = createSlice({
     addToCart(state, action) {
       state.cart.push({
         cartId: Math.random(),
-        ...action.payload
+        ...action.payload,
       });
     },
     removeFromCart(state, action) {
-      state.cart = state.cart.filter(product => product.cartId !== action.payload.cartId);
+      state.cart = state.cart.filter(
+        (product) => product.cartId !== action.payload.cartId
+      );
     },
     clearCart(state) {
       state.cart = [];
-    }
+    },
   },
 });
 
